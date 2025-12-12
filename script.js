@@ -8,7 +8,7 @@ const usernameInput = document.getElementById("username");
     // ---------------------------
     // SHOW EXISTING USER BUTTON IF DATA EXISTS
     // ---------------------------
-    const savedUsername = localStorage.getItem("username");
+    const savedUsername = localStorage.getItem("name");
     const savedPassword = localStorage.getItem("password");
 
     if (savedUsername && savedPassword) {
@@ -28,7 +28,7 @@ const usernameInput = document.getElementById("username");
 
       if (checkbox.checked) {
         // Save to localStorage
-        localStorage.setItem("username", username);
+        localStorage.setItem("name", username);
         localStorage.setItem("password", password);
 		  alert("credentials are stored in localStorage")
         existingBtn.style.display = "block";
