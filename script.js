@@ -23,18 +23,20 @@ const usernameInput = document.getElementById("username");
 
       const username = usernameInput.value;
       const password = passwordInput.value;
-
+      
       alert(`Logged in as ${username}`);
 
       if (checkbox.checked) {
         // Save to localStorage
         localStorage.setItem("username", username);
         localStorage.setItem("password", password);
+		  alert("credentials are stored in localStorage")
         existingBtn.style.display = "block";
       } else {
         // Remove saved data
         localStorage.removeItem("username");
         localStorage.removeItem("password");
+		  alert("credentials are not stored")
         existingBtn.style.display = "none";
       }
     });
