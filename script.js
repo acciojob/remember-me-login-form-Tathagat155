@@ -34,7 +34,7 @@ const usernameInput = document.getElementById("username");
         existingBtn.style.display = "block";
       } else {
         // Remove saved data
-        localStorage.removeItem("username");
+        localStorage.removeItem("name");
         localStorage.removeItem("password");
 		  alert("credentials are not stored")
         existingBtn.style.display = "none";
