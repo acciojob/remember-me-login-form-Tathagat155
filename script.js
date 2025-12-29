@@ -45,6 +45,6 @@ const usernameInput = document.getElementById("username");
     // LOGIN AS EXISTING USER
     // ---------------------------
     existingBtn.addEventListener("click", function () {
-      const saved = localStorage.getItem("username");
+      const saved = localStorage.getItem("name");
       alert(`Logged in as ${saved}`);
     });
