@@ -12,7 +12,7 @@ const usernameInput = document.getElementById("username");
     const savedPassword = localStorage.getItem("password");
 
     if (savedUsername && savedPassword) {
-      existingBtn.style.display = "block";
+      existingBtn.style.display ="block";
     }
 
     // ---------------------------
@@ -23,7 +23,7 @@ const usernameInput = document.getElementById("username");
 
       const username = usernameInput.value;
       const password = passwordInput.value;
-      
+      if(username && password){
       alert(`Logged in as ${username}`);
 
       if (checkbox.checked) {
@@ -39,6 +39,7 @@ const usernameInput = document.getElementById("username");
 		  alert("credentials are not stored")
         existingBtn.style.display = "none";
       }
+	  }
     });
 
     // ---------------------------
